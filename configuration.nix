@@ -39,11 +39,13 @@
     ];
     casks = [
       "syncthing-app"
+      "helium-browser"
+      "blender"
+      "inkscape"
+      "prusaslicer"
+      "libreoffice"
     ];
   };
-
-  # no luck - it ain't nixos
-  # virtualisation.docker.enable = true;
 
   # The do-not-touch section
   # system.configurationRevision = self.rev or self.dirtyRev or null;
