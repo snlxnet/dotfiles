@@ -6,6 +6,7 @@
   fonts.fontconfig.enable = true;
   home.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
+    obsidian
   ];
 
   programs.helix = {
@@ -97,13 +98,19 @@
     enable = true;
     enableFishIntegration = true;
     settings.theme = "catppuccin-mocha";
+    settings.default_shell = "fish";
   };
 
   programs.fish = {
     enable = true;
     interactiveShellInit = ''
       set fish_greeting # disable it
+      /opt/homebrew/bin/brew shellenv | source
     '';
+    shellAliases = {
+      docker = "container";
+      docker-compose = "container-compose";
+    };
     shellAbbrs = {
       cat = "bat";
       agent = "eval (ssh-agent -c)";

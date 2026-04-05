@@ -5,6 +5,7 @@
 
   # Necessary for using flakes on this system.
   nix.settings.experimental-features = "nix-command flakes";
+  nixpkgs.config.allowUnfree = true;
 
   programs.fish.enable = true;
 
@@ -20,6 +21,7 @@
     show-recents = false;
     persistent-apps = [
       { app = "/Applications/Safari.app"; }
+      { app = "/Users/alex/Applications/Home Manager Apps/kitty.app"; }
     ];
   };
   system.defaults.NSGlobalDomain = {
@@ -28,6 +30,20 @@
     AppleShowAllFiles = true;
     "com.apple.swipescrolldirection" = false;
   };
+
+  homebrew = {
+    enable = true;
+    brews = [
+      "container"
+      "container-compose"
+    ];
+    casks = [
+      "syncthing-app"
+    ];
+  };
+
+  # no luck - it ain't nixos
+  # virtualisation.docker.enable = true;
 
   # The do-not-touch section
   # system.configurationRevision = self.rev or self.dirtyRev or null;
