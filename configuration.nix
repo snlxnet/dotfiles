@@ -1,6 +1,8 @@
 { pkgs, inputs, ... }: {
   environment.systemPackages = with pkgs; [
     static-web-server
+    pass
+    gnupg
   ];
 
   # Necessary for using flakes on this system.
@@ -8,6 +10,8 @@
   nixpkgs.config.allowUnfree = true;
 
   programs.fish.enable = true;
+  programs.gnupg.agent.enable = true;
+  programs.gnupg.agent.enableSSHSupport = true;
 
   system.primaryUser = "alex";
   users.users.alex = {
@@ -28,6 +32,7 @@
     AppleInterfaceStyle = "Dark";
     AppleShowAllExtensions = true;
     AppleShowAllFiles = true;
+    _HIHideMenuBar = true;
     "com.apple.swipescrolldirection" = false;
   };
 
@@ -44,6 +49,7 @@
       "inkscape"
       "prusaslicer"
       "libreoffice"
+      "glide"
     ];
   };
 

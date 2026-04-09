@@ -7,6 +7,7 @@
   home.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
     obsidian
+    ffmpeg
   ];
 
   programs.helix = {
@@ -108,13 +109,11 @@
       /opt/homebrew/bin/brew shellenv | source
     '';
     shellAliases = {
-      docker = "container";
-      docker-compose = "container-compose";
+      rebuild = "sudo darwin-rebuild switch";
     };
     shellAbbrs = {
       cat = "bat";
       agent = "eval (ssh-agent -c)";
-      rebuild = "sudo darwin-rebuild switch";
     };
   };
 
