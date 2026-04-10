@@ -50,6 +50,8 @@
       "prusaslicer"
       "libreoffice"
       "glide"
+      "handy"
+      "blackhole-2ch"
     ];
   };
 
