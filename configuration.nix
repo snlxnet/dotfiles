@@ -50,6 +50,7 @@
       "prusaslicer"
       "libreoffice"
       "glide"
+      "thunderbird"
       "handy"
       "blackhole-2ch"
     ];
