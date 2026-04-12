@@ -1,0 +1,11 @@
+[settings]
+outer_gap = 10
+inner_gap = 10
+
+[keys]
+"Ctrl + ArrowLeft" = { move_focus = "left" }
+"Ctrl + ArrowRight" = { move_focus = "right" }
+"Ctrl + Shift + ArrowLeft" = { move_node = "left" }
+"Ctrl + Shift + ArrowRight" = { move_node = "right" }
+"Alt + Z" = "toggle_space_activated"
+"Alt + Y" = "toggle_space_activated"

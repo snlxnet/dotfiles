@@ -20,8 +20,10 @@
 
   system.defaults.dock = {
     autohide = true;
-    orientation = "left";
+    orientation = "right";
     show-recents = false;
+    mru-spaces = false;
+    mineffect = "scale";
     persistent-apps = [
       { app = "/Applications/Safari.app"; }
       { app = "/Users/alex/Applications/Home Manager Apps/kitty.app"; }

@@ -2,6 +2,8 @@
 
 {
   home.username = "alex";
+
+  home.file.".glide.toml".source = ./glide.toml;
   
   fonts.fontconfig.enable = true;
   home.packages = with pkgs; [
