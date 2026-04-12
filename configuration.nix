@@ -53,6 +53,7 @@
       "thunderbird"
       "handy"
       "blackhole-2ch"
+      "utm"
     ];
   };
 
