@@ -5,7 +5,6 @@
     gnupg
   ];
 
-  # Necessary for using flakes on this system.
   nix.settings.experimental-features = "nix-command flakes";
   nixpkgs.config.allowUnfree = true;
 
@@ -58,7 +57,6 @@
   };
 
   # The do-not-touch section
-  # system.configurationRevision = self.rev or self.dirtyRev or null;
   system.stateVersion = 6;
   nixpkgs.hostPlatform = "aarch64-darwin";
 }

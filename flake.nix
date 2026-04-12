@@ -1,5 +1,5 @@
 {
-  description = "Example nix-darwin system flake";
+  description = "snlxnet dotfiles";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-25.11-darwin";
@@ -15,8 +15,6 @@
 
   outputs = inputs@{ self, nix-darwin, nixpkgs, home-manager }:
   {
-    # Build darwin flake using:
-    # $ darwin-rebuild build --flake .#saturn
     darwinConfigurations."saturn" = nix-darwin.lib.darwinSystem {
       modules = [
         ./configuration.nix
