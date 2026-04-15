@@ -39,9 +39,14 @@
 
   homebrew = {
     enable = true;
+    taps = [ "LizardByte/homebrew" ]; # this has to be a separate build from the sunshine install
     brews = [
       "container"
       "container-compose"
+      {
+        name = "sunshine";
+        restart_service = "changed";
+      }
     ];
     casks = [
       "syncthing-app"
@@ -51,6 +56,7 @@
       "prusaslicer"
       "libreoffice"
       "glide"
+      "betterdisplay"
       "thunderbird"
       "handy"
       "blackhole-2ch"
