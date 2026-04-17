@@ -32,8 +32,13 @@
   programs.git = {
     enable = true;
     settings = {
-      user.name = "Alex";
-      user.email = "alexanderthestudent@yandex.ru";
+      user = {
+        name = "Alex";
+        email = "alexanderthestudent@yandex.ru";
+        signingkey = "Alex";
+      };
+      commit.gpgsign = true;
+      tag.gpgSign = true;
 
       # Based on https://www.codetinkerer.com/2023/10/01/stacked-branches-with-vanilla-git.html
       # Found it after remembering t3dotgg recommending graphite
