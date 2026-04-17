@@ -37,7 +37,7 @@
 
       # Based on https://www.codetinkerer.com/2023/10/01/stacked-branches-with-vanilla-git.html
       # Found it after remembering t3dotgg recommending graphite
-      aliases = {
+      alias = {
         hist = "rebase --keep-base master -i";
         next = "rebase --continue";
         ct = "commit -p";
