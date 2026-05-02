@@ -1,6 +1,8 @@
 { pkgs, inputs, ... }: {
   environment.systemPackages = with pkgs; [
     static-web-server
+    android-tools
+    scrcpy
     pass
     gnupg
   ];
