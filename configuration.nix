@@ -53,6 +53,7 @@
     casks = [
       "syncthing-app"
       "helium-browser"
+      "firefox"
       "obs"
       "blender"
       "inkscape"
