@@ -13,11 +13,25 @@
   programs.fish.enable = true;
   programs.gnupg.agent.enable = true;
   programs.gnupg.agent.enableSSHSupport = true;
+  services.tailscale.enable = true;
+  services.openssh = {
+    enable = true;
+    extraConfig = ''
+      AllowTcpForwarding yes
+      X11Forwarding no
+      AllowAgentForwarding no
+      AllowStreamLocalForwarding yes
+      AuthenticationMethods publickey
+    '';
+  };
 
   system.primaryUser = "alex";
   users.users.alex = {
     home = "/Users/alex";
     shell = pkgs.fish;
+    openssh.authorizedKeys.keys = [
+      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGuOHwF1mi4zlUyda/hmrPEzfsgIGkNHCdBCPkhKjX37 root@e09e96d04e05"
+    ];
   };
 
   system.defaults.dock = {
