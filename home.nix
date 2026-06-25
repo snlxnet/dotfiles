@@ -11,6 +11,7 @@
     comfortaa
     obsidian
     ffmpeg
+    devenv
   ];
 
   programs.helix = {

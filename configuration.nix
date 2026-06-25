@@ -1,10 +1,12 @@
 { pkgs, inputs, ... }: {
+  environment.shells = [ pkgs.bashInteractive pkgs.zsh ];
   environment.systemPackages = with pkgs; [
     static-web-server
     android-tools
     scrcpy
     pass
     gnupg
+    mosh
   ];
 
   nix.settings.experimental-features = "nix-command flakes";
