@@ -135,6 +135,11 @@
       name = "JetBrainsMono Nerd Font Mono";
       size = 13;
     };
+    settings = {
+      macos_option_as_alt = true;
+      # macos_titlebar_color = "#1e1e2e";
+      hide_window_decorations = "titlebar-only";
+    };
   };
 
   home.stateVersion = "25.11";

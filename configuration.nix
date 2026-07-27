@@ -61,6 +61,7 @@
     brews = [
       "container"
       "container-compose"
+      "cava"
       {
         name = "sunshine";
         restart_service = "changed";
@@ -70,6 +71,8 @@
       "syncthing-app"
       "helium-browser"
       "firefox"
+      "visual-studio-code"
+      "shortcat" # warning: mac-only, use swiftmouse on linux
       "obs"
       "blender"
       "inkscape"
