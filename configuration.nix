@@ -57,10 +57,12 @@
 
   homebrew = {
     enable = true;
-    taps = [ "LizardByte/homebrew" ]; # this has to be a separate build from the sunshine install
+    taps = [ "LizardByte/homebrew" "nohajc/anylinuxfs" ]; # this has to be a separate build from the sunshine install
     brews = [
       "container"
       "container-compose"
+      "anylinuxfs"
+      "pandoc" # the nix version is way too old
       "cava"
       {
         name = "sunshine";

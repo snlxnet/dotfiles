@@ -36,7 +36,7 @@
     settings = {
       user = {
         name = "Alex";
-        email = "alexanderthestudent@yandex.ru";
+        email = "snlxnet@proton.me";
         signingkey = "Alex";
       };
       commit.gpgsign = true;

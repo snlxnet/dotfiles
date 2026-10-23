@@ -8,4 +8,6 @@ default_disable = false
 "Ctrl + ArrowRight" = { move_focus = "right" }
 "Ctrl + Shift + ArrowLeft" = { move_node = "left" }
 "Ctrl + Shift + ArrowRight" = { move_node = "right" }
-"Ctrl + F" = "toggle_fullscreen"
+"Ctrl + Shift + F" = "toggle_fullscreen"
+"Ctrl + Shift + Y" = "toggle_space_activated"
+"Ctrl + Shift + Space" = "toggle_window_floating"
