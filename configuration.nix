@@ -7,6 +7,7 @@
     pass
     gnupg
     mosh
+    moonlight-qt
   ];
 
   nix.settings.experimental-features = "nix-command flakes";
