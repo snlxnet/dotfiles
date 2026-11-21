@@ -8,6 +8,8 @@
     gnupg
     mosh
     moonlight-qt
+    telegram-desktop
+    discord
   ];
 
   nix.settings.experimental-features = "nix-command flakes";
